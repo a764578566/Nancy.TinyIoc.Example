@@ -41,5 +41,17 @@ namespace Nancy.TinyIoc.ExampleGenericTest
             Assert.IsTrue(book.Id == guid);
             Assert.IsTrue(book.Name == "TestName");
         }
+
+
+        [Test]
+        public void Test()
+        {
+            stubIDbContextUser.Test = () =>
+            {
+                Console.WriteLine("Test");
+            };
+
+            _userService.Test2();
+        }
     }
 }

@@ -9,5 +9,7 @@ namespace Nancy.TinyIoc.Example.Interfaces
     public interface IDbContext<T> where T : IEntityBase
     {
         T FindById(Guid id);
+
+        void Test();
     }
 }

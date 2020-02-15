@@ -15,5 +15,13 @@ namespace Nancy.TinyIoc.ExampleGeneric
         {
 
         }
+
+        /// <summary>
+        /// 测试方法1
+        /// </summary>
+        public void Test1()
+        {
+            _dbContext.Test();
+        }
     }
 }

@@ -15,5 +15,13 @@ namespace Nancy.TinyIoc.ExampleGeneric
             Console.WriteLine($"{typeof(T).Name}'s Id is {id}");
             return new T() { Id = id, Name = typeof(T).Name };
         }
+
+        /// <summary>
+        /// 接口
+        /// </summary>
+        public void Test()
+        {
+            Console.WriteLine("Test Method");
+        }
     }
 }
