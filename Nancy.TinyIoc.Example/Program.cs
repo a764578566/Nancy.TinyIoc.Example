@@ -12,11 +12,16 @@ namespace Nancy.TinyIoc.Example
         static void Main(string[] args)
         {
             TinyIoCContainer container = new TinyIoCContainer();
-            container.Register<IPerson, Man>();
+
+            container.Register<IPerson, Man>();//单例模式获取
+
+            IPerson person = container.Resolve<IPerson>();//这里的person跟下面在worker获取的是一个对象
 
             Worker worker = container.Resolve<Worker>();
 
             worker.SayHello();
+
+            person.Introduce();
 
             Console.ReadKey();
         }

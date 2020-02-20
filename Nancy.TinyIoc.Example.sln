@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.TinyIoc.ExampleGeneri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.TinyIoc.ExampleGenericTest", "Nancy.TinyIoc.ExampleGenericTest\Nancy.TinyIoc.ExampleGenericTest.csproj", "{3EDDC539-77C9-4067-8837-14FAE3A0053D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.TinyIoc.Example.PropertyInjection", "Nancy.TinyIoc.Example.PropertyInjection\Nancy.TinyIoc.Example.PropertyInjection.csproj", "{6FEFA706-2051-454F-B06C-8C41768BCC93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3EDDC539-77C9-4067-8837-14FAE3A0053D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EDDC539-77C9-4067-8837-14FAE3A0053D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EDDC539-77C9-4067-8837-14FAE3A0053D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FEFA706-2051-454F-B06C-8C41768BCC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEFA706-2051-454F-B06C-8C41768BCC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEFA706-2051-454F-B06C-8C41768BCC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEFA706-2051-454F-B06C-8C41768BCC93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

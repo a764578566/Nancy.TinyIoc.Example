@@ -11,6 +11,7 @@ namespace Nancy.TinyIoc.Example
     {
         public void Introduce()
         {
+            Console.WriteLine(this.GetHashCode());
             Console.WriteLine("Hello ,My Name is zhou");
         }
     }
