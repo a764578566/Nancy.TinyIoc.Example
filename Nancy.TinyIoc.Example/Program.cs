@@ -17,9 +17,15 @@ namespace Nancy.TinyIoc.Example
 
             IPerson person = container.Resolve<IPerson>();//这里的person跟下面在worker获取的是一个对象
 
-            Worker worker = container.Resolve<Worker>();
+            Worker worker1 = container.Resolve<Worker>();
 
-            worker.SayHello();
+            Worker worker2 = container.Resolve<Worker>();
+
+            worker1.SayHello();
+            Console.WriteLine("worker1:" + worker1.GetHashCode());
+
+            worker2.SayHello();
+            Console.WriteLine("worker2:" + worker2.GetHashCode());//worker1跟worker2为两个不同的对象，他们里面的IPerson为一个对象
 
             person.Introduce();
 
